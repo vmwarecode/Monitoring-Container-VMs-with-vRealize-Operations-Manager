@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Content>
+    <Views>
+        <ViewDef id="4852b201-d546-410e-a631-b6c4121764df">
+            <Title>VCH - VM Properties</Title>
+            <Description/>
+            <SubjectType adapterKind="VMWARE" filter="[[{&quot;filterType&quot;:&quot;properties&quot;,&quot;metricKey&quot;:&quot;config|guestFullName&quot;,&quot;condition&quot;:&quot;CONTAINS&quot;,&quot;metricValue&quot;:{&quot;value&quot;:&quot;Photon - VCH&quot;,&quot;isStringMetric&quot;:true}}]]" resourceKind="VirtualMachine" type="descendant"/>
+            <SubjectType adapterKind="VMWARE" filter="[[{&quot;filterType&quot;:&quot;properties&quot;,&quot;metricKey&quot;:&quot;config|guestFullName&quot;,&quot;condition&quot;:&quot;CONTAINS&quot;,&quot;metricValue&quot;:{&quot;value&quot;:&quot;Photon - VCH&quot;,&quot;isStringMetric&quot;:true}}]]" resourceKind="VirtualMachine" type="self"/>
+            <Usage>dashboard</Usage>
+            <Usage>report</Usage>
+            <Usage>details</Usage>
+            <Usage>content</Usage>
+            <Controls>
+                <Control id="time-interval-selector_id_17" type="time-interval-selector" visible="false">
+                    <Property name="advancedTimeMode" value="false"/>
+                    <Property name="unit" value="MINUTES"/>
+                    <Property name="count" value="1"/>
+                </Control>
+                <Control id="attributes-selector_id_18" type="attributes-selector" visible="false">
+                    <Property name="attributeInfos">
+                        <List>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="config|name"/>
+    <Property name="id" value="extModel5708-2"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="VirtualMachine"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+    <Property name="displayName" value="Name in vCenter"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="summary|tag"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="VirtualMachine"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="CURRENT"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+    <Property name="displayName" value="vSphere Tag"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="summary|guest|ipAddress"/>
+    <Property name="id" value="extModel4582-10"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="VirtualMachine"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+    <Property name="displayName" value="IP Address"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="config|guestFullName"/>
+    <Property name="id" value="extModel5708-1"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="VirtualMachine"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+    <Property name="displayName" value="Operation System"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="summary|guest|toolsRunningStatus"/>
+    <Property name="id" value="extModel4582-11"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="VirtualMachine"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+    <Property name="displayName" value="VMTools Running"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="config|hardware|num_Cpu"/>
+    <Property name="preferredUnitId" value="7004"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="VirtualMachine"/>
+    <Property name="rollUpType" value="NONE"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="CURRENT"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="# vCPUs"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="mem|guest_provisioned"/>
+    <Property name="preferredUnitId" value="mb"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="VirtualMachine"/>
+    <Property name="rollUpType" value="NONE"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="CURRENT"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="displayName" value="Total vRAM"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="summary|config|numEthernetCards"/>
+    <Property name="id" value="extModel16283-6"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="VirtualMachine"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+    <Property name="displayName" value="# vNICs"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="summary|parentVcenter"/>
+    <Property name="id" value="extModel4582-8"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="VirtualMachine"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+    <Property name="displayName" value="Parent vCenter"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="summary|parentDatacenter"/>
+    <Property name="id" value="extModel4582-5"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="VirtualMachine"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+    <Property name="displayName" value="Parent Datacenter"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="summary|parentCluster"/>
+    <Property name="id" value="extModel4582-6"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="VirtualMachine"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+    <Property name="displayName" value="Parent Cluster"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="summary|parentHost"/>
+    <Property name="id" value="extModel4582-7"/>
+    <Property name="isStringAttribute" value="true"/>
+    <Property name="adapterKind" value="VMWARE"/>
+    <Property name="resourceKind" value="VirtualMachine"/>
+    <Property name="rollUpType" value="AVG"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="LAST"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="true"/>
+    <Property name="displayName" value="Parent Host"/>
+</Value>
+                            </Item>
+                        </List>
+                    </Property>
+                    <Property name="summaryInfos">
+                        <List>
+                            <Item>
+<Value>
+    <Property name="displayName" value="Summary"/>
+    <Property name="aggregation" value="MAX"/>
+    <Property name="attributeIndexes">
+        <List>
+            <Item value="0"/>
+            <Item value="1"/>
+            <Item value="2"/>
+            <Item value="3"/>
+            <Item value="4"/>
+            <Item value="5"/>
+            <Item value="6"/>
+            <Item value="7"/>
+            <Item value="8"/>
+            <Item value="9"/>
+            <Item value="10"/>
+            <Item value="11"/>
+        </List>
+    </Property>
+</Value>
+                            </Item>
+                        </List>
+                    </Property>
+                </Control>
+                <Control id="pagination-control_id_19" type="pagination-control" visible="true">
+                    <Property name="start" value="0"/>
+                    <Property name="size" value="50"/>
+                </Control>
+            </Controls>
+            <DataProviders>
+                <DataProvider dataType="list-view" id="list-view_id_16"/>
+            </DataProviders>
+            <Presentation type="summary"/>
+        </ViewDef>
+    </Views>
+</Content>
